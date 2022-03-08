@@ -59,7 +59,8 @@ self.addEventListener('push', function(event) {
 
         return self.registration.showNotification(data.title, {
           body: data.body,
-          icon: "/notification-test/public/favicon.png",
+          icon: data.icon,
+          badge: data.icon,
           vibrate: [200, 100, 200, 100, 200, 100, 200],
         });
 
