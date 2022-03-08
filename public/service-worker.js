@@ -61,6 +61,7 @@ self.addEventListener('push', function(event) {
           body: data.body,
           icon: data.icon,
           badge: data.icon,
+          image: data.image,
           vibrate: [200, 100, 200, 100, 200, 100, 200],
         });
 
