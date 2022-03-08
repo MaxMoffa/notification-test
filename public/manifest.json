@@ -1,0 +1,9 @@
+{
+    "name" : "Notification Test",
+    "short_name" : "NT",
+    "icons" : [],
+    "start_url" : "/index.html",
+    "display" : "standalone",
+    "background_color" : "#ffffff",
+    "theme_color" : "#ABCDEF"
+}
