@@ -54,9 +54,10 @@ self.addEventListener('push', function(event) {
     event.waitUntil(
       // Retrieve a list of the clients of this service worker.
       self.clients.matchAll().then(function(clientList) {
-        
+
         return self.registration.showNotification(data.title, {
           body: data.body,
+          icon: data.icon
         });
 
       })
