@@ -55,9 +55,12 @@ self.addEventListener('push', function(event) {
       // Retrieve a list of the clients of this service worker.
       self.clients.matchAll().then(function(clientList) {
 
+        console.log(data);
+
         return self.registration.showNotification(data.title, {
           body: data.body,
-          icon: data.icon
+          icon: "/notification-test/public/favicon.png",
+          vibrate: [200, 100, 200, 100, 200, 100, 200],
         });
 
       })
