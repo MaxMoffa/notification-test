@@ -7,7 +7,7 @@
 	onMount(() => {
 
 		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('./service-worker.js').then(function(reg) {
+			navigator.serviceWorker.register('/notification-test/public/service-worker.js').then(function(reg) {
 
 				if(reg.installing) {
 					console.log('Service worker installing');
