@@ -39,7 +39,7 @@
 
 				var options = {
 					userVisibleOnly: true,
-					applicationServerKey: urlBase64ToUint8Array("BFaNs8n5JYn2ozrR2z1-FfuNXSvCBQxyUPvR1Z1uNQS0c8ZLS2qJhDAH_U9IiFkECR5WOGBP4aw9scgHZazDvNg")
+					applicationServerKey: urlBase64ToUint8Array("SERVER-KEY")
 				};
 				swreg.pushManager.subscribe(options).then(
 				function(pushSubscription) {
